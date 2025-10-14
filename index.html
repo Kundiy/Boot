@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css/" rel="stylesheet">
+</head>
+<body>
+
+<!--task 1-->
+<button
+        type="button"
+        class="btn btn-outline-info btn-lg"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        data-bs-toggle-second="tooltip"
+        data-bs-placement="right"
+        data-bs-html="true"
+        title="Find out more about JavaScript!">
+    Get info about JS
+</button>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                JavaScript (JS) is one of the most popular and powerful programming languages in
+                the world, primarily used for creating dynamic and interactive web pages. It
+                allows developers to add complex features such as animations, real-time updates,
+                form validation, and interactive content without needing to reload a page.
+                Originally designed to run in web browsers, JavaScript has grown beyond the
+                browser thanks to environments like Node.js, which enable backend development
+                using the same language. Its flexibility and huge ecosystem make it a key skill
+                for full-stack developers. With frameworks such as React, Vue, and Angular,
+                JavaScript continues to shape the modern web, powering countless websites and
+                applications across the globe.
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Task 2-->
+<div id="liveAlertPlaceholder"></div>
+<button
+        type="button"
+        class="btn btn-outline-primary"
+        id="liveAlertBtn">
+        Show alert
+</button>
+
+
+<link rel="stylesheet" href="style.css">
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
