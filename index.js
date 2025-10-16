@@ -10,7 +10,8 @@ const appendAlert = (message, type) => {
     alertPlaceholder.append(wrapper)
     return wrapper
 }
-
+const tooltipTriggerList = document.querySelector('.tool')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 const btn = document.querySelector('.btn-outline-primary');
 let currentAlert = null;
